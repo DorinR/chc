@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        background-color: aliceblue;
+        background-color: #FAFAFA;
         font-family: 'Work Sans', sans-serif;
     }
 
@@ -28,4 +28,4 @@ export const GlobalStyle = createGlobalStyle`
         border: 3px dotted #03B5AA;
         padding: 7px;
     }
-`
+`;
