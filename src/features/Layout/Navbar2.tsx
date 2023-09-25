@@ -89,10 +89,15 @@ export const NavigationBar = () => {
 const NavbarContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 
   background-color: #337ccf;
   nav {
     background-color: #337ccf !important;
+  }
+
+  .navbar-nav {
+    gap: 32px;
   }
 
   .dropdown-item > a {
@@ -101,5 +106,8 @@ const NavbarContainer = styled.div`
 
   .nav-item > a {
     color: white !important;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
   }
 `;
