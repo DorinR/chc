@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { App } from "../App";
 import { MainLayout } from "../features/Layout/MainLayout";
 import { About } from "../features/Pages/About/About";
 import { About1 } from "../features/Pages/About/About1";
@@ -29,7 +28,7 @@ export const ApplicationRoutes = () => {
   return (
     <MainLayout>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<About1 />} />
         <Route path="/about" element={<About />} />
         <Route path="a1" element={<About1 />} />
         <Route path="a2" element={<About2 />} />
