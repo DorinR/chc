@@ -6,7 +6,7 @@ export const Header = () => {
       <HeaderWrapper>
         <LogoContainer>
           {" "}
-          <Logo src="/logo.png" alt="Website logo" />
+          <Logo src="/logo2.png" alt="Website logo" />
         </LogoContainer>
         <NavLinks>
           <NavLink href="#">English</NavLink>
