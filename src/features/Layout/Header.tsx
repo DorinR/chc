@@ -14,7 +14,6 @@ export const Header = () => {
           <NavLink href="#">1 (438) 530 1020</NavLink>
           <VerticalSeparator />
           <NavLink href="#">info@canadainnohub.com</NavLink>
-          <CTAButton>Join C.I.H.</CTAButton>
         </NavLinks>
       </HeaderWrapper>
     </HeaderWrapperWrapper>
@@ -22,7 +21,7 @@ export const Header = () => {
 };
 
 const Logo = styled.img`
-  height: 90px;
+  height: 100px;
 `;
 
 const VerticalSeparator = styled.span`
