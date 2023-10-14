@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import { MainLayout } from "../features/Layout/MainLayout";
-import { About } from "../features/Pages/About/About";
 import { About1 } from "../features/Pages/About/About1";
 import { About2 } from "../features/Pages/About/About2";
 import { About3 } from "../features/Pages/About/About3";
@@ -29,7 +28,6 @@ export const ApplicationRoutes = () => {
     <MainLayout>
       <Routes>
         <Route path="/" element={<About1 />} />
-        <Route path="/about" element={<About />} />
         <Route path="a1" element={<About1 />} />
         <Route path="a2" element={<About2 />} />
         <Route path="a3" element={<About3 />} />

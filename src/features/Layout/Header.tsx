@@ -1,6 +1,14 @@
+import { useContext } from "react";
 import styled from "styled-components";
+import { LangContext } from "../..";
+
+interface LangContextType {
+  changeLang: (lang: string) => void;
+}
 
 export const Header = () => {
+  const setLanguage = (useContext(LangContext) as LangContextType).changeLang; // Add a type assertion to fix the 'Object is of type 'unknown'' error
+
   return (
     <HeaderWrapperWrapper>
       <HeaderWrapper>
@@ -9,7 +17,8 @@ export const Header = () => {
           <Logo src="/logo2.png" alt="Website logo" />
         </LogoContainer>
         <NavLinks>
-          <NavLink href="#">English</NavLink>
+          <LanguageToggler setLanguage={setLanguage} />{" "}
+          {/* Pass setLanguage as a prop */}
           <VerticalSeparator />
           <NavLink href="#">1 (438) 530 1020</NavLink>
           <VerticalSeparator />
@@ -18,6 +27,14 @@ export const Header = () => {
       </HeaderWrapper>
     </HeaderWrapperWrapper>
   );
+};
+
+interface LanguageTogglerProps {
+  setLanguage: (lang: "en" | "ro" | "ru") => void; // Define the setLanguage prop
+}
+
+const LanguageToggler = ({ setLanguage }: LanguageTogglerProps) => {
+  return <NavLink onClick={() => setLanguage("ro")}>English</NavLink>; // Call setLanguage when the NavLink is clicked
 };
 
 const Logo = styled.img`

@@ -1,8 +1,10 @@
+import { FormattedMessage } from "react-intl";
+
 export const About1 = () => {
   return (
     <div>
       <h1>About Association A.O. "Explore Canada-Moldova-Romania"</h1>
-
+      <FormattedMessage id="testkey" />
       <p>
         Association A.O. "Explore Canada-Moldova-Romania" is an independent,
         non-profit organization. It aims to promote economic, social, and sports
