@@ -19,7 +19,6 @@ import { Project1 } from "../features/Pages/Projects/Project1";
 import { Project2 } from "../features/Pages/Projects/Project2";
 import { Project3 } from "../features/Pages/Projects/Project3";
 import { Projects } from "../features/Pages/Projects/Projects";
-import { Social } from "../features/Pages/Social/Social";
 import { Social1 } from "../features/Pages/Social/Social1";
 import { Social2 } from "../features/Pages/Social/Social2";
 
@@ -40,7 +39,6 @@ export const ApplicationRoutes = () => {
         <Route path="/c1" element={<Info1 />} />
         <Route path="/c2" element={<Info2 />} />
         <Route path="/c3" element={<Info3 />} />
-        <Route path="/social" element={<Social />} />
         <Route path="/d1" element={<Social1 />} />
         <Route path="/d2" element={<Social2 />} />
         <Route path="/partners" element={<Partners />} />

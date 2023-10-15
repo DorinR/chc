@@ -64,7 +64,7 @@ export const NavigationBar = () => {
                 <Link to="/e1"> Technical Cooperation Bureau (ICAO/OACI)</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/e2">Voiak</Link>
+                <Link to="/e2">Voiaj</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link to="/e3">Candore College</Link>
@@ -76,7 +76,7 @@ export const NavigationBar = () => {
             {/* Contact */}
             <NavDropdown title="Contact" id="basic-nav-dropdown">
               <NavDropdown.Item>
-                <Link to="/f1">Action</Link>
+                <Link to="/f1">Contact</Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

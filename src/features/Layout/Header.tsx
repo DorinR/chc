@@ -17,12 +17,14 @@ export const Header = () => {
           <Logo src="/logo2.png" alt="Website logo" />
         </LogoContainer>
         <NavLinks>
-          <LanguageToggler setLanguage={setLanguage} />{" "}
+          {/* <LanguageToggler setLanguage={setLanguage} />{" "}
           {/* Pass setLanguage as a prop */}
-          <VerticalSeparator />
+          {/* <VerticalSeparator />  */}
           <NavLink href="#">1 (438) 530 1020</NavLink>
           <VerticalSeparator />
-          <NavLink href="#">info@canadainnohub.com</NavLink>
+          <NavLink href="mailto:canadamdro@gmail.com">
+            canadamdro@gmail.com
+          </NavLink>
         </NavLinks>
       </HeaderWrapper>
     </HeaderWrapperWrapper>

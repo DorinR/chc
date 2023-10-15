@@ -65,7 +65,7 @@ export const Footer = () => {
             <Link to="/e1">Technical Cooperation Bureau (ICAO/OACI)</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/e2">Voiak</Link>
+            <Link to="/e2">Voiaj</Link>
           </MenuItem>
           <MenuItem>
             <Link to="/e3">Candore College</Link>
@@ -78,7 +78,7 @@ export const Footer = () => {
         <Column>
           <ColumnHeader>Contact</ColumnHeader>
           <MenuItem>
-            <Link to="/f1">Action</Link>
+            <Link to="/f1">Contact</Link>
           </MenuItem>
         </Column>
       </FooterContainer>
