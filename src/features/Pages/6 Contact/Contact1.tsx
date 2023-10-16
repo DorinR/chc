@@ -2,8 +2,11 @@ export const Contact1 = () => {
   return (
     <div>
       <h1>Republic of Moldova</h1>
-      <p>Phone: +373-------------</p>
-      <p>Email: [Not provided]</p>
+      <p>Phone: +37368852588</p>
+      <p>
+        Email:{" "}
+        <a href="mailto:tudorcujba1974@gmail.com">tudorcujba1974@gmail.com</a>
+      </p>
 
       <h1>Canada</h1>
       <p>Name: Alexei Rogov</p>
