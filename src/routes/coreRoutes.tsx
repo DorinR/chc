@@ -1,26 +1,26 @@
 import { Route, Routes } from "react-router-dom";
 import { MainLayout } from "../features/Layout/MainLayout";
-import { About1 } from "../features/Pages/About/About1";
-import { About2 } from "../features/Pages/About/About2";
-import { About3 } from "../features/Pages/About/About3";
-import { About4 } from "../features/Pages/About/About4";
-import { Contact } from "../features/Pages/Contact/Contact";
-import { Contact1 } from "../features/Pages/Contact/Contact1";
-import { Info } from "../features/Pages/Info/Info";
-import { Info1 } from "../features/Pages/Info/Info1";
-import { Info2 } from "../features/Pages/Info/Info2";
-import { Info3 } from "../features/Pages/Info/Info3";
-import { Partners } from "../features/Pages/Partners/Partners";
-import { Partners1 } from "../features/Pages/Partners/Partners1";
-import { Partners2 } from "../features/Pages/Partners/Partners2";
-import { Partners3 } from "../features/Pages/Partners/Partners3";
-import { Partners4 } from "../features/Pages/Partners/Partners4";
-import { Project1 } from "../features/Pages/Projects/Project1";
-import { Project2 } from "../features/Pages/Projects/Project2";
-import { Project3 } from "../features/Pages/Projects/Project3";
-import { Projects } from "../features/Pages/Projects/Projects";
-import { Social1 } from "../features/Pages/Social/Social1";
-import { Social2 } from "../features/Pages/Social/Social2";
+import { About1 } from "../features/Pages/1 About Us/About1";
+import { About2 } from "../features/Pages/1 About Us/About2";
+import { About3 } from "../features/Pages/1 About Us/About3";
+import { About4 } from "../features/Pages/1 About Us/About4";
+import { Project1 } from "../features/Pages/2 Projects/Project1";
+import { Project2 } from "../features/Pages/2 Projects/Project2";
+import { Project3 } from "../features/Pages/2 Projects/Project3";
+import { Projects } from "../features/Pages/2 Projects/Projects";
+import { Info } from "../features/Pages/3 Info/Info";
+import { Info1 } from "../features/Pages/3 Info/Info1";
+import { Info2 } from "../features/Pages/3 Info/Info2";
+import { Info3 } from "../features/Pages/3 Info/Info3";
+import { Social1 } from "../features/Pages/4 Business Sports/Social1";
+import { Social2 } from "../features/Pages/4 Business Sports/Social2";
+import { Partners } from "../features/Pages/5 Partners/Partners";
+import { Partners1 } from "../features/Pages/5 Partners/Partners1";
+import { Partners2 } from "../features/Pages/5 Partners/Partners2";
+import { Partners3 } from "../features/Pages/5 Partners/Partners3";
+import { Partners4 } from "../features/Pages/5 Partners/Partners4";
+import { Contact } from "../features/Pages/6 Contact/Contact";
+import { Contact1 } from "../features/Pages/6 Contact/Contact1";
 
 export const ApplicationRoutes = () => {
   return (
