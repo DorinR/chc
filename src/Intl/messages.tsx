@@ -19,7 +19,7 @@ const translations: Translation[] = [
 export const getMessages = (lang: "en" | "fr" | "ro") => {
   const messages: Record<string, string> = {};
 
-  const idx = lang === "en" ? 1 : lang === "ro" ? 2 : 3;
+  const idx = lang === "en" ? 1 : lang === "fr" ? 2 : 3;
 
   translations.forEach((translation) => {
     messages[translation[0]] = translation[idx];
