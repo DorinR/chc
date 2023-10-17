@@ -36,6 +36,9 @@ export const NavigationBar = () => {
               <NavDropdown.Item>
                 <Link to="/b3">Airports of Moldova</Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/b4">National/global project</Link>
+              </NavDropdown.Item>
             </NavDropdown>
             {/* Info CA/RM/RO */}
             <NavDropdown title="Info CA/RM/RO" id="basic-nav-dropdown">

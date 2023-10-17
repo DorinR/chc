@@ -34,6 +34,9 @@ export const Footer = () => {
           <MenuItem>
             <Link to="/b3">Airports of Moldova</Link>
           </MenuItem>
+          <MenuItem>
+            <Link to="/b4">National/global project </Link>
+          </MenuItem>
         </Column>
 
         <Column>

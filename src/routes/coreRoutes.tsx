@@ -7,6 +7,7 @@ import { About4 } from "../features/Pages/1 About Us/About4";
 import { Project1 } from "../features/Pages/2 Projects/Project1";
 import { Project2 } from "../features/Pages/2 Projects/Project2";
 import { Project3 } from "../features/Pages/2 Projects/Project3";
+import { Project4 } from "../features/Pages/2 Projects/Project4";
 import { Projects } from "../features/Pages/2 Projects/Projects";
 import { Info } from "../features/Pages/3 Info/Info";
 import { Info1 } from "../features/Pages/3 Info/Info1";
@@ -35,6 +36,7 @@ export const ApplicationRoutes = () => {
         <Route path="/b1" element={<Project1 />} />
         <Route path="/b2" element={<Project2 />} />
         <Route path="/b3" element={<Project3 />} />
+        <Route path="/b4" element={<Project4 />} />
         <Route path="/info" element={<Info />} />
         <Route path="/c1" element={<Info1 />} />
         <Route path="/c2" element={<Info2 />} />
