@@ -4,10 +4,13 @@ import { LangContext } from "../..";
 
 interface LangContextType {
   changeLang: (lang: string) => void;
+  lang: "en" | "fr" | "ro";
 }
 
 export const Header = () => {
-  const setLanguage = (useContext(LangContext) as LangContextType).changeLang; // Add a type assertion to fix the 'Object is of type 'unknown'' error
+  const { changeLang: setLanguage, lang } = useContext(
+    LangContext
+  ) as LangContextType; // Add a type assertion to fix the 'Object is of type 'unknown'' error
 
   return (
     <HeaderWrapperWrapper>
@@ -17,9 +20,9 @@ export const Header = () => {
           <Logo src="/logo2.png" alt="Website logo" />
         </LogoContainer>
         <NavLinks>
-          {/* <LanguageToggler setLanguage={setLanguage} />{" "}
+          <LanguageToggler setLanguage={setLanguage} lang={lang} />{" "}
           {/* Pass setLanguage as a prop */}
-          {/* <VerticalSeparator />  */}
+          <VerticalSeparator />
           <NavLink href="#">1 (438) 530 1020</NavLink>
           <VerticalSeparator />
           <NavLink href="mailto:canadamdro@gmail.com">
@@ -32,11 +35,24 @@ export const Header = () => {
 };
 
 interface LanguageTogglerProps {
-  setLanguage: (lang: "en" | "ro" | "ru") => void; // Define the setLanguage prop
+  setLanguage: (lang: "en" | "fr" | "ro") => void; // Define the setLanguage prop
+  lang: "en" | "fr" | "ro";
 }
 
-const LanguageToggler = ({ setLanguage }: LanguageTogglerProps) => {
-  return <NavLink onClick={() => setLanguage("ro")}>English</NavLink>; // Call setLanguage when the NavLink is clicked
+const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
+  return (
+    <>
+      {lang !== "en" && (
+        <NavLink onClick={() => setLanguage("en")}>English</NavLink>
+      )}
+      {lang !== "fr" && (
+        <NavLink onClick={() => setLanguage("fr")}>Français</NavLink>
+      )}
+      {lang !== "ro" && (
+        <NavLink onClick={() => setLanguage("ro")}>Română</NavLink>
+      )}
+    </>
+  );
 };
 
 const Logo = styled.img`

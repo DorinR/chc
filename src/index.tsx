@@ -20,17 +20,17 @@ const root = ReactDOM.createRoot(
 );
 
 export const LangContext = React.createContext<{
-  lang: "en" | "ro" | "ru";
-  changeLang: (lang: "en" | "ro" | "ru") => void;
+  lang: "en" | "fr" | "ro";
+  changeLang: (lang: "en" | "fr" | "ro") => void;
 }>({
   lang: "en",
   changeLang: () => {},
 });
 
 const LocProvider = ({ children }: { children: React.ReactNode }) => {
-  const [lang, setLang] = useState<"en" | "ro" | "ru">("en");
+  const [lang, setLang] = useState<"en" | "fr" | "ro">("en");
 
-  const changeLang = (lang: "en" | "ro" | "ru") => {
+  const changeLang = (lang: "en" | "fr" | "ro") => {
     setLang(lang);
   };
 

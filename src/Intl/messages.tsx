@@ -16,7 +16,7 @@ const translations: Translation[] = [
   ...page6_contactsMessages,
 ];
 
-export const getMessages = (lang: "en" | "ro" | "ru") => {
+export const getMessages = (lang: "en" | "fr" | "ro") => {
   const messages: Record<string, string> = {};
 
   const idx = lang === "en" ? 1 : lang === "ro" ? 2 : 3;
