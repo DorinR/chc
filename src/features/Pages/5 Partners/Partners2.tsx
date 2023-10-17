@@ -1,8 +1,11 @@
+import { useIntl } from "react-intl";
+
 export const Partners2 = () => {
+  const { formatMessage } = useIntl();
+
   return (
-    <div>
-      <h1>Voiaj</h1>
-      <img src="/partner1.png" alt="Voiaj logo" />
-    </div>
+    <div
+      dangerouslySetInnerHTML={{ __html: formatMessage({ id: "partners2" }) }}
+    ></div>
   );
 };

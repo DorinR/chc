@@ -1,8 +1,11 @@
+import { useIntl } from "react-intl";
+
 export const Partners3 = () => {
+  const { formatMessage } = useIntl();
+
   return (
-    <div>
-      <h1>Candore College</h1>
-      <img src="/partner2.png" alt="Candore College logo" />
-    </div>
+    <div
+      dangerouslySetInnerHTML={{ __html: formatMessage({ id: "partners3" }) }}
+    ></div>
   );
 };
