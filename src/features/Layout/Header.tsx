@@ -49,17 +49,33 @@ const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
   return (
     <>
       {lang !== "en" && (
-        <NavLink onClick={() => setLanguage("en")}>English</NavLink>
+        <NavLink onClick={() => setLanguage("en")}>
+          <StyledImage src="/british.png" />
+        </NavLink>
       )}
       {lang !== "fr" && (
-        <NavLink onClick={() => setLanguage("fr")}>Français</NavLink>
+        <NavLink onClick={() => setLanguage("fr")}>
+          <StyledImage src="/french.png" />
+        </NavLink>
       )}
       {lang !== "ro" && (
-        <NavLink onClick={() => setLanguage("ro")}>Română</NavLink>
+        <NavLink onClick={() => setLanguage("ro")}>
+          <StyledImage src="/romanian.png" />
+        </NavLink>
       )}
     </>
   );
 };
+
+const StyledImage = styled.img`
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  overflow: hidden;
+  object-fit: cover;
+
+  border-radius: 2px;
+`;
 
 const Logo = styled.img`
   height: 125px;
