@@ -4,10 +4,12 @@ import { page3_infoMessages } from "./3_info";
 import { page4_businessSportsMessages } from "./4_businessSports";
 import { page5_partnersMessages } from "./5_partners";
 import { page6_contactsMessages } from "./6_contacts";
+import { general_messages } from "./general";
 
 export type Translation = [string, string, string, string];
 
 const translations: Translation[] = [
+  ...general_messages,
   ...page1_aboutMessages,
   ...page2_projectMessages,
   ...page3_infoMessages,

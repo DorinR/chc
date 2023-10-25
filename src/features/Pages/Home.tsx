@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 
 export const Home = () => {
@@ -27,9 +28,15 @@ export const Home = () => {
 
   return (
     <InnovationHubContainer>
-      <h1>Canada Innovation Hub</h1>
-      <h2>Business, Social and Innovative Hub</h2>
-      <h3>Explore the world with us!</h3>
+      <Title>
+        <FormattedMessage id="home_title" />
+      </Title>
+      <SubTitle>
+        <FormattedMessage id="home_subtitle" />
+      </SubTitle>
+      <SubSubTitle>
+        <FormattedMessage id="home_subsubtitle" />
+      </SubSubTitle>
 
       {Object.entries(countries).map(([country, images]) => (
         <CountryRow key={country}>
@@ -48,6 +55,20 @@ export const Home = () => {
     </InnovationHubContainer>
   );
 };
+
+const Title = styled.h1`
+  font-size: 3rem;
+`;
+
+const SubTitle = styled.h2`
+  font-size: 1.8rem;
+`;
+
+const SubSubTitle = styled.h3`
+  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+`;
 
 const InnovationHubContainer = styled.div`
   text-align: center;
