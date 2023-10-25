@@ -22,12 +22,13 @@ import { Partners3 } from "../features/Pages/5 Partners/Partners3";
 import { Partners4 } from "../features/Pages/5 Partners/Partners4";
 import { Contact } from "../features/Pages/6 Contact/Contact";
 import { Contact1 } from "../features/Pages/6 Contact/Contact1";
+import { Home } from "../features/Pages/Home";
 
 export const ApplicationRoutes = () => {
   return (
     <MainLayout>
       <Routes>
-        <Route path="/" element={<About1 />} />
+        <Route path="/" element={<Home />} />
         <Route path="a1" element={<About1 />} />
         <Route path="a2" element={<About2 />} />
         <Route path="a3" element={<About3 />} />

@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { LangContext } from "../..";
 
@@ -11,13 +12,18 @@ export const Header = () => {
   const { changeLang: setLanguage, lang } = useContext(
     LangContext
   ) as LangContextType; // Add a type assertion to fix the 'Object is of type 'unknown'' error
+  const navigate = useNavigate();
 
   return (
     <HeaderWrapperWrapper>
       <HeaderWrapper>
-        <LogoContainer>
+        <LogoContainer
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           {" "}
-          <Logo src="/logo2.png" alt="Website logo" />
+          <Logo src="/logo2_no_text.png" alt="Website logo" />
         </LogoContainer>
         <NavLinks>
           <LanguageToggler setLanguage={setLanguage} lang={lang} />{" "}
@@ -56,7 +62,7 @@ const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
 };
 
 const Logo = styled.img`
-  height: 100px;
+  height: 125px;
 `;
 
 const VerticalSeparator = styled.span`
@@ -91,7 +97,7 @@ const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  height: 110px;
+  height: 150px;
   width: 900px;
   color: black;
   padding-left: 0px;
@@ -100,12 +106,14 @@ const HeaderWrapper = styled.header`
 
 const LogoContainer = styled.div`
   width: 150px; // Width of the container
-  height: 100px; // Height of the container
+  height: 150px; // Height of the container
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   overflow: hidden; // This will ensure the image doesn't spill out of the container
+
+  cursor: pointer;
 `;
 
 const NavLinks = styled.nav`
