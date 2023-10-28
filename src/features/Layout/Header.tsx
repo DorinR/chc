@@ -29,7 +29,7 @@ export const Header = () => {
           <LanguageToggler setLanguage={setLanguage} lang={lang} />{" "}
           {/* Pass setLanguage as a prop */}
           <VerticalSeparator />
-          <NavLink href="#">1 (438) 530 1020</NavLink>
+          <NavLink href="#">1 (438) 501 7075</NavLink>
           <VerticalSeparator />
           <NavLink href="mailto:canadamdro@gmail.com">
             canadamdro@gmail.com

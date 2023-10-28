@@ -31,12 +31,12 @@ export const Home = () => {
       <Title>
         <FormattedMessage id="home_title" />
       </Title>
-      <SubTitle>
+      {/* <SubTitle>
         <FormattedMessage id="home_subtitle" />
       </SubTitle>
       <SubSubTitle>
         <FormattedMessage id="home_subsubtitle" />
-      </SubSubTitle>
+      </SubSubTitle> */}
 
       {Object.entries(countries).map(([country, images]) => (
         <CountryRow key={country}>

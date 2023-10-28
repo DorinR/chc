@@ -3,9 +3,9 @@ import { Translation } from "./messages";
 export const general_messages: Translation[] = [
   [
     `home_title`,
-    `Canada Innovation Hub`,
-    `Hub d'innovation du Canada`,
-    `Hab de inovare din Canada`,
+    `Business, Social and Sports Hub!`,
+    `Hub d'affaires, social et sportif!`,
+    `Hub de afaceri, social și sportiv!`,
   ],
   [
     `home_subtitle`,
