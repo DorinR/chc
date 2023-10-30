@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { FormattedMessage } from "react-intl";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { LangContext } from "../..";
@@ -48,24 +49,37 @@ interface LanguageTogglerProps {
 const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
   return (
     <>
-      {lang !== "en" && (
-        <NavLink onClick={() => setLanguage("en")}>
+      <NavLink onClick={() => setLanguage("en")}>
+        <LanguageButton>
           <StyledImage src="/british.png" />
-        </NavLink>
-      )}
-      {lang !== "fr" && (
-        <NavLink onClick={() => setLanguage("fr")}>
+          <FormattedMessage id="lang_button_en" />
+        </LanguageButton>
+      </NavLink>
+
+      <NavLink onClick={() => setLanguage("fr")}>
+        <LanguageButton>
           <StyledImage src="/french.png" />
-        </NavLink>
-      )}
-      {lang !== "ro" && (
-        <NavLink onClick={() => setLanguage("ro")}>
+          <FormattedMessage id="lang_button_fr" />
+        </LanguageButton>
+      </NavLink>
+
+      <NavLink onClick={() => setLanguage("ro")}>
+        <LanguageButton>
           <StyledImage src="/romanian.png" />
-        </NavLink>
-      )}
+          <FormattedMessage id="lang_button_ro" />
+        </LanguageButton>
+      </NavLink>
     </>
   );
 };
+
+const LanguageButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+`;
 
 const StyledImage = styled.img`
   width: 30px;

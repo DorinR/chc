@@ -19,4 +19,7 @@ export const general_messages: Translation[] = [
     `Explorez le monde avec nous!`,
     `Explorează lumea cu noi!`,
   ],
+  [`lang_button_en`, `En`, `En`, `En`],
+  [`lang_button_fr`, `Fr`, `Fr`, `Fr`],
+  [`lang_button_ro`, `Ro`, `Ro`, `Ro`],
 ];
