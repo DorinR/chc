@@ -26,11 +26,30 @@ export const Header = () => {
           {" "}
           <Logo src="/logo2_no_text.png" alt="Website logo" />
         </LogoContainer>
+        <SloganContainer>
+          <Slogan1>
+            <FormattedMessage id="slogan1" />
+          </Slogan1>
+          <Slogan2>
+            <FormattedMessage id="slogan2" />
+          </Slogan2>
+        </SloganContainer>
         <NavLinks>
           <LanguageToggler setLanguage={setLanguage} lang={lang} />{" "}
           {/* Pass setLanguage as a prop */}
           <VerticalSeparator />
-          <NavLink href="#">1 (438) 501 7075</NavLink>
+          <NavLink href="#">
+            <PhoneNumberContainer>
+              <PhoneNum>
+                <PhoneCountryCode>CA: </PhoneCountryCode>
+                <FormattedMessage id="phone_num_ca" />
+              </PhoneNum>
+              <PhoneNum>
+                <PhoneCountryCode>MD: </PhoneCountryCode>
+                <FormattedMessage id="phone_num_md" />
+              </PhoneNum>
+            </PhoneNumberContainer>
+          </NavLink>
           <VerticalSeparator />
           <NavLink href="mailto:canadamdro@gmail.com">
             canadamdro@gmail.com
@@ -41,6 +60,46 @@ export const Header = () => {
   );
 };
 
+const PhoneNum = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+`;
+
+const PhoneCountryCode = styled.span`
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(37, 98, 168);
+`;
+
+const PhoneNumberContainer = styled.div`
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+`;
+
+const Slogan1 = styled.div`
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(37, 98, 168);
+`;
+
+const Slogan2 = styled.div`
+  text-align: center;
+  font-weight: bold;
+  color: #c2242a;
+`;
+
+const SloganContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 interface LanguageTogglerProps {
   setLanguage: (lang: "en" | "fr" | "ro") => void; // Define the setLanguage prop
   lang: "en" | "fr" | "ro";
@@ -48,7 +107,7 @@ interface LanguageTogglerProps {
 
 const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
   return (
-    <>
+    <LanguagesContainer>
       <NavLink onClick={() => setLanguage("en")}>
         <LanguageButton>
           <StyledImage src="/british.png" />
@@ -69,9 +128,15 @@ const LanguageToggler = ({ setLanguage, lang }: LanguageTogglerProps) => {
           <FormattedMessage id="lang_button_ro" />
         </LanguageButton>
       </NavLink>
-    </>
+    </LanguagesContainer>
   );
 };
+
+const LanguagesContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+`;
 
 const LanguageButton = styled.div`
   display: flex;
@@ -128,7 +193,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   padding: 1rem 2rem;
   height: 150px;
-  width: 900px;
+  width: 1000px;
   color: black;
   padding-left: 0px;
   padding-right: 0px;

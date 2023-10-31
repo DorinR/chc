@@ -1,85 +1,142 @@
 import { Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { useIntl } from "react-intl";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NavigationBar = () => {
+  const { formatMessage } = useIntl();
+
   return (
     <NavbarContainer>
       <Navbar bg="light" expand="lg">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             {/* About Us */}
-            <NavDropdown title="About Us" id="basic-nav-dropdown">
+            <NavDropdown
+              title={formatMessage({ id: "navbar.about_us" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
                 <Link to="/a1">
-                  Association A.O. Explore Canada-Moldova-Romania
+                  {formatMessage({ id: "navbar.about_us.explore_association" })}
                 </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/a2">Our Team</Link>
+                <Link to="/a2">
+                  {formatMessage({ id: "navbar.about_us.our_team" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/a3">Our Services</Link>
-              </NavDropdown.Item>{" "}
+                <Link to="/a3">
+                  {formatMessage({ id: "navbar.about_us.our_services" })}
+                </Link>
+              </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/a4">How to become a member</Link>
+                <Link to="/a4">
+                  {formatMessage({ id: "navbar.about_us.become_member" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             {/* Projects */}
-            <NavDropdown title="Projects" id="basic-nav-dropdown">
+            <NavDropdown
+              title={formatMessage({ id: "navbar.projects" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
-                <Link to="/b1">Air cadets</Link>
+                <Link to="/b1">
+                  {formatMessage({ id: "navbar.projects.air_cadets" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/b2">Casa Moldovei</Link>
+                <Link to="/b2">
+                  {formatMessage({ id: "navbar.projects.casa_moldovei" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/b3">Airports of Moldova</Link>
+                <Link to="/b3">
+                  {formatMessage({ id: "navbar.projects.airports_moldova" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/b4">National/global project</Link>
+                <Link to="/b4">
+                  {formatMessage({ id: "navbar.projects.national_global" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
-            {/* Info CA/RM/RO */}
-            <NavDropdown title="Info CA/RM/RO" id="basic-nav-dropdown">
+            {/* News CA/RM/RO */}
+            <NavDropdown
+              title={formatMessage({ id: "navbar.news" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
-                <Link to="/c1">Canada</Link>
+                <Link to="/c1">
+                  {formatMessage({ id: "navbar.news.canada" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/c2">Republic of Moldova</Link>
+                <Link to="/c2">
+                  {formatMessage({ id: "navbar.news.republic_moldova" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/c3">Romania</Link>
+                <Link to="/c3">
+                  {formatMessage({ id: "navbar.news.romania" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             {/* Business, Sports */}
-            <NavDropdown title="Business/Sports" id="basic-nav-dropdown">
+            <NavDropdown
+              title={formatMessage({ id: "navbar.business_sports" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
-                <Link to="/d1">Business</Link>
+                <Link to="/d1">
+                  {formatMessage({ id: "navbar.business_sports.business" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/d2">Sports</Link>
+                <Link to="/d2">
+                  {formatMessage({ id: "navbar.business_sports.sports" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             {/* Partners */}
-            <NavDropdown title="Partners" id="basic-nav-dropdown">
+            <NavDropdown
+              title={formatMessage({ id: "navbar.partners" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
-                <Link to="/e1"> Technical Cooperation Bureau (ICAO/OACI)</Link>
+                <Link to="/e1">
+                  {formatMessage({
+                    id: "navbar.partners.technical_cooperation",
+                  })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/e2">Voiaj</Link>
+                <Link to="/e2">
+                  {formatMessage({ id: "navbar.partners.voiaj" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/e3">Candore College</Link>
+                <Link to="/e3">
+                  {formatMessage({ id: "navbar.partners.candore_college" })}
+                </Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to="/e4">Airports Council International</Link>
+                <Link to="/e4">
+                  {formatMessage({ id: "navbar.partners.airports_council" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             {/* Contact */}
-            <NavDropdown title="Contact" id="basic-nav-dropdown">
+            <NavDropdown
+              title={formatMessage({ id: "navbar.contact" })}
+              id="basic-nav-dropdown"
+            >
               <NavDropdown.Item>
-                <Link to="/f1">Contact</Link>
+                <Link to="/f1">
+                  {formatMessage({ id: "navbar.contact.contact_us" })}
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

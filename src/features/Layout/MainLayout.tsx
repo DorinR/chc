@@ -25,7 +25,7 @@ const ApplicationRootDiv = styled.div`
 
 const MainContentLayout = styled.div`
   padding: 50px 0px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   min-height: 600px;
 `;

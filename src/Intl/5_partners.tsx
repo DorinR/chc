@@ -92,12 +92,17 @@ export const page5_partnersMessages: Translation[] = [
   ],
   [
     `partners2`,
-    `<h1>Voiaj</h1>
-  <img src="/partner1.png" alt="Voiaj logo" />`,
-    `<h1>Voiaj</h1>
-    <img src="/partner1.png" alt="Voiaj logo" />`,
-    `<h1>Voiaj</h1>
-    <img src="/partner1.png" alt="Voiaj logo" />`,
+    `<h1>Voiaj MD</h1>
+    <img src="/partner1.png" alt="Voiaj logo" />
+    <p>Website: <a href="http://www.voiaj.md" target="_blank">www.voiaj.md</a></p>`,
+
+    `<h1>Voiaj MD</h1>
+    <img src="/partner1.png" alt="Voiaj logo" />
+    <p>Site Web : <a href="http://www.voiaj.md" target="_blank">www.voiaj.md</a></p>`,
+
+    `<h1>Voiaj MD</h1>
+    <img src="/partner1.png" alt="Voiaj logo" />
+    <p>Website: <a href="http://www.voiaj.md" target="_blank">www.voiaj.md</a></p>`,
   ],
   [
     `partners3`,

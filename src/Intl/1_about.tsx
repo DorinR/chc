@@ -292,26 +292,17 @@ export const page1_aboutMessages: Translation[] = [
   ],
   [
     `about4`,
-    `<h1>
-    How You Can Become a Member of A.O. "Explore Canada-Moldova-România"
-  </h1>
-
-  <p>
-    Interested in becoming a member of our association? Here's how you can
-    reach out to us:
-  </p>
-
-  <h2>Contact Information</h2>
-  <ul>
-    <li>
-      Email: <a href="mailto:alexeirogov@yahoo.ca">alexeirogov@yahoo.ca</a>
-    </li>
-  </ul>`,
+    `<h1>How to become a member of the A.O. Association "Explore Canada-Moldova-Romania"</h1>
+    <p>Contact us at the email address: <a href="mailto:alexeirogov@yahoo.ca">alexeirogov@yahoo.ca</a></p>
+    <p>Contact Name: Alexei Rogov</p>
+    <p>Phone: +1 438-501-7075</p>`,
     `<h1>Comment devenir membre de l'association A.O. "Explore Canada-Moldavie-Roumanie"</h1>
     <p>Contactez-nous à l'adresse email : <a href="mailto:alexeirogov@yahoo.ca">alexeirogov@yahoo.ca</a></p>
-    `,
+    <p>Nom du contact : Alexei Rogov</p>
+    <p>Téléphone : +1 438-501-7075</p>`,
     `<h1>Cum puteți deveni membru al Asociației A.O. "Explore Canada-Moldova-România"</h1>
     <p>Contactați-ne la adresa de email: <a href="mailto:alexeirogov@yahoo.ca">alexeirogov@yahoo.ca</a></p>
-    `,
+    <p>Numele de contact: Alexei Rogov</p>
+    <p>Telefon: +1 438-501-7075</p>`,
   ],
 ];

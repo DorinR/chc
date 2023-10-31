@@ -1,87 +1,128 @@
+import { useIntl } from "react-intl";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Footer = () => {
+  const { formatMessage } = useIntl();
+
   return (
     <FooterContainerContainer>
       <FooterContainer>
         <Column>
-          <ColumnHeader>About Us</ColumnHeader>
+          <ColumnHeader>
+            {formatMessage({ id: "navbar.about_us" })}
+          </ColumnHeader>
           <MenuItem>
             <Link to="/a1">
-              Association A.O. Explore Canada-Moldova-Romania
+              {formatMessage({ id: "navbar.about_us.explore_association" })}
             </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/a2">Our Team</Link>
+            <Link to="/a2">
+              {formatMessage({ id: "navbar.about_us.our_team" })}
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/a3">Our Services</Link>
+            <Link to="/a3">
+              {formatMessage({ id: "navbar.about_us.our_services" })}
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/a4">How to become a member</Link>
-          </MenuItem>
-        </Column>
-
-        <Column>
-          <ColumnHeader>Projects</ColumnHeader>
-          <MenuItem>
-            <Link to="/b1">Air cadets</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/b2">Casa Moldovei</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/b3">Airports of Moldova</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/b4">National/global project </Link>
+            <Link to="/a4">
+              {formatMessage({ id: "navbar.about_us.become_member" })}
+            </Link>
           </MenuItem>
         </Column>
 
         <Column>
-          <ColumnHeader>Info</ColumnHeader>
+          <ColumnHeader>
+            {formatMessage({ id: "navbar.projects" })}
+          </ColumnHeader>
           <MenuItem>
-            <Link to="/c1">Canada</Link>
+            <Link to="/b1">
+              {formatMessage({ id: "navbar.projects.air_cadets" })}
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/c2">Republic of Moldova</Link>
+            <Link to="/b2">
+              {formatMessage({ id: "navbar.projects.casa_moldovei" })}
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/c3">Romania</Link>
-          </MenuItem>
-        </Column>
-
-        <Column>
-          <ColumnHeader>Business/Sports</ColumnHeader>
-          <MenuItem>
-            <Link to="/d1">Business</Link>
+            <Link to="/b3">
+              {formatMessage({ id: "navbar.projects.airports_moldova" })}
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link to="/d2">Sports</Link>
-          </MenuItem>
-        </Column>
-
-        <Column>
-          <ColumnHeader>Partners</ColumnHeader>
-          <MenuItem>
-            <Link to="/e1">Technical Cooperation Bureau (ICAO/OACI)</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/e2">Voiaj</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/e3">Candore College</Link>
-          </MenuItem>
-          <MenuItem>
-            <Link to="/e4">Airports Council International</Link>
+            <Link to="/b4">
+              {formatMessage({ id: "navbar.projects.national_global" })}
+            </Link>
           </MenuItem>
         </Column>
 
         <Column>
-          <ColumnHeader>Contact</ColumnHeader>
+          <ColumnHeader>{formatMessage({ id: "navbar.news" })}</ColumnHeader>
           <MenuItem>
-            <Link to="/f1">Contact</Link>
+            <Link to="/c1">{formatMessage({ id: "navbar.news.canada" })}</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/c2">
+              {formatMessage({ id: "navbar.news.republic_moldova" })}
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/c3">{formatMessage({ id: "navbar.news.romania" })}</Link>
+          </MenuItem>
+        </Column>
+
+        <Column>
+          <ColumnHeader>
+            {formatMessage({ id: "navbar.business_sports" })}
+          </ColumnHeader>
+          <MenuItem>
+            <Link to="/d1">
+              {formatMessage({ id: "navbar.business_sports.business" })}
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/d2">
+              {formatMessage({ id: "navbar.business_sports.sports" })}
+            </Link>
+          </MenuItem>
+        </Column>
+
+        <Column>
+          <ColumnHeader>
+            {formatMessage({ id: "navbar.partners" })}
+          </ColumnHeader>
+          <MenuItem>
+            <Link to="/e1">
+              {formatMessage({ id: "navbar.partners.technical_cooperation" })}
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/e2">
+              {formatMessage({ id: "navbar.partners.voiaj" })}
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/e3">
+              {formatMessage({ id: "navbar.partners.candore_college" })}
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/e4">
+              {formatMessage({ id: "navbar.partners.airports_council" })}
+            </Link>
+          </MenuItem>
+        </Column>
+
+        <Column>
+          <ColumnHeader>{formatMessage({ id: "navbar.contact" })}</ColumnHeader>
+          <MenuItem>
+            <Link to="/f1">
+              {formatMessage({ id: "navbar.contact.contact_us" })}
+            </Link>
           </MenuItem>
         </Column>
       </FooterContainer>
