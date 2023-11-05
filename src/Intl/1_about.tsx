@@ -120,7 +120,7 @@ export const page1_aboutMessages: Translation[] = [
     <h2>Tatiana Rogova - Manager de Proiect</h2>
     <img src="/tatiana_profile.png" alt="Tatiana Rogova" style="width: 25%; border-radius: 10px;">
     <p>
-      Tatiana Rogova este un membru cheie și Manager de Proiect al Asociației A.O. "Explore Canada-Moldova-România", ocupându-se de relațiile internationales și coordonarea dintre filiale.
+      Tatiana Rogova este un membru cheie și Manager de Proiect al Asociației A.O. "Explore Canada-Moldova-România", ocupându-se de relațiile internationale și coordonarea dintre filiale.
     </p>
   `,
   ],
