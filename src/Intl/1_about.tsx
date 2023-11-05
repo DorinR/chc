@@ -68,7 +68,7 @@ export const page1_aboutMessages: Translation[] = [
   [
     `about2`,
     `<h1>Meet Our Team</h1>
-
+  
     <h2>Alexei Rogov</h2>
     <p>
       Alexei Rogov serves as a National Observer at the Air Navigation
@@ -79,11 +79,16 @@ export const page1_aboutMessages: Translation[] = [
       He is also the President of the A.O. "Explore Canada-Moldova-România" in
       Canada.
     </p>
-
+  
     <h2>Tudor Cujba</h2>
     <p>
       Tudor Cujba holds the position of President for the A.O. "Explore
       Canada-Moldova-România" in Moldova.
+    </p>
+  
+    <h2>Tatiana Rogova</h2>
+    <p>
+      Tatiana Rogova is a key member of the A.O. "Explore Canada-Moldova-România", handling international relations and coordination between branches.
     </p>`,
     `<h1>Leadership</h1>
     
@@ -93,7 +98,12 @@ export const page1_aboutMessages: Translation[] = [
     
     <h2>Tudor Cujba</h2>
     <p>Président de l'association A.O. "Explore Canada-Moldavie-Roumanie" (Moldova)</p>
-`,
+  
+    <h2>Tatiana Rogova</h2>
+    <p>
+      Tatiana Rogova est un membre clé de l'A.O. "Explore Canada-Moldavie-Roumanie", responsable des relations internationales et de la coordination entre les branches.
+    </p>
+  `,
     `<h1>Conducere</h1>
     
     <h2>Alexei Rogov</h2>
@@ -102,7 +112,12 @@ export const page1_aboutMessages: Translation[] = [
     
     <h2>Tudor Cujba</h2>
     <p>Președintele Asociației A.O. "Explore Canada-Moldova-România" (Moldova)</p>
-`,
+  
+    <h2>Tatiana Rogova</h2>
+    <p>
+      Tatiana Rogova este un membru cheie al Asociației A.O. "Explore Canada-Moldova-România", ocupându-se de relațiile internaționale și coordonarea dintre filiale.
+    </p>
+  `,
   ],
   [
     `about3`,
