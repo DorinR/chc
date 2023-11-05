@@ -69,53 +69,58 @@ export const page1_aboutMessages: Translation[] = [
     `about2`,
     `<h1>Meet Our Team</h1>
   
-    <h2>Alexei Rogov</h2>
+    <h2>Alexei Rogov - Director, Canada Branch</h2>
+    <img src="/alexei_profile.png" alt="Alexei Rogov" style="width: 25%; border-radius: 10px;">
     <p>
       Alexei Rogov serves as a National Observer at the Air Navigation
       Commission of the International Civil Aviation Organization (ICAO /
       ICAO) in Montreal, Canada.
     </p>
     <p>
-      He is also the President of the A.O. "Explore Canada-Moldova-România" in
-      Canada.
+      He is also the President and Director of the Canada branch of the A.O. "Explore Canada-Moldova-România".
     </p>
   
-    <h2>Tudor Cujba</h2>
+    <h2>Tudor Cujba - Director, Moldova Branch</h2>
     <p>
-      Tudor Cujba holds the position of President for the A.O. "Explore
-      Canada-Moldova-România" in Moldova.
+      Tudor Cujba holds the position of President and Director of the Moldova branch for the A.O. "Explore
+      Canada-Moldova-România".
     </p>
   
-    <h2>Tatiana Rogova</h2>
+    <h2>Tatiana Rogova - Project Manager</h2>
+    <img src="/tatiana_profile.png" alt="Tatiana Rogova" style="width: 25%; border-radius: 10px;">
     <p>
-      Tatiana Rogova is a key member of the A.O. "Explore Canada-Moldova-România", handling international relations and coordination between branches.
+      Tatiana Rogova is a key member and Project Manager at the A.O. "Explore Canada-Moldova-România", handling international relations and coordination between branches.
     </p>`,
     `<h1>Leadership</h1>
     
-    <h2>Alexei Rogov</h2>
+    <h2>Alexei Rogov - Directeur, Branche Canadienne</h2>
+    <img src="/alexei_profile.png" alt="Alexei Rogov" style="width: 25%; border-radius: 10px;">
     <p>Observateur National à la Commission de Navigation Aérienne de l'Organisation de l'Aviation Civile Internationale (OACI / OACI), Montréal - Canada.</p>
-    <p>Président de l'association A.O. "Explore Canada-Moldavie-Roumanie" (Canada)</p>
+    <p>Président et Directeur de la branche canadienne de l'association A.O. "Explore Canada-Moldavie-Roumanie".</p>
     
-    <h2>Tudor Cujba</h2>
-    <p>Président de l'association A.O. "Explore Canada-Moldavie-Roumanie" (Moldova)</p>
+    <h2>Tudor Cujba - Directeur, Branche Moldave</h2>
+    <p>Président et Directeur de la branche moldave de l'association A.O. "Explore Canada-Moldavie-Roumanie".</p>
   
-    <h2>Tatiana Rogova</h2>
+    <h2>Tatiana Rogova - Chef de Projet</h2>
+    <img src="/tatiana_profile.png" alt="Tatiana Rogova" style="width: 25%; border-radius: 10px;">
     <p>
-      Tatiana Rogova est un membre clé de l'A.O. "Explore Canada-Moldavie-Roumanie", responsable des relations internationales et de la coordination entre les branches.
+      Tatiana Rogova est un membre clé et Chef de Projet à l'A.O. "Explore Canada-Moldavie-Roumanie", responsable des relations internationales et de la coordination entre les branches.
     </p>
   `,
     `<h1>Conducere</h1>
     
-    <h2>Alexei Rogov</h2>
+    <h2>Alexei Rogov - Director, Sucursala Canada</h2>
+    <img src="/alexei_profile.png" alt="Alexei Rogov" style="width: 25%; border-radius: 10px;">
     <p>Observator național la Comisia de Navigație Aeriană a Organizației Aviației Civile Internaționale, Agenție specializată ONU (ICAO / OACI), Montreal - Canada.</p>
-    <p>Președintele Asociației A.O. "Explore Canada-Moldova-România" (Canada)</p>
+    <p>Președinte și Director al sucursalei din Canada a Asociației A.O. "Explore Canada-Moldova-România".</p>
     
-    <h2>Tudor Cujba</h2>
-    <p>Președintele Asociației A.O. "Explore Canada-Moldova-România" (Moldova)</p>
+    <h2>Tudor Cujba - Director, Sucursala Moldova</h2>
+    <p>Președinte și Director al sucursalei din Moldova a Asociației A.O. "Explore Canada-Moldova-România".</p>
   
-    <h2>Tatiana Rogova</h2>
+    <h2>Tatiana Rogova - Manager de Proiect</h2>
+    <img src="/tatiana_profile.png" alt="Tatiana Rogova" style="width: 25%; border-radius: 10px;">
     <p>
-      Tatiana Rogova este un membru cheie al Asociației A.O. "Explore Canada-Moldova-România", ocupându-se de relațiile internaționale și coordonarea dintre filiale.
+      Tatiana Rogova este un membru cheie și Manager de Proiect al Asociației A.O. "Explore Canada-Moldova-România", ocupându-se de relațiile internationales și coordonarea dintre filiale.
     </p>
   `,
   ],
